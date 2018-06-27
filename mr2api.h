@@ -78,9 +78,9 @@ typedef int (*OnReceiveCallBack2)(const char* psPkg, int iPkgLen, const STUMsgPr
  *     但是在不同的进程之间不能使用同一个Handle，例如在Unix下fork后,在主进程中调用MrInit生成的Handle在子进程中不再有效.
  * return: 非NULL-OK; NULL-failed
  */
-void*  _stdcall Mr2Init(const char* psAppID, const char* psAppPasswd, 
-	OnReceiveCallBack2 onReceive,const STUConnInfo2* pArrConnInfo, int iArrConnInfoCount, 
-	void* pvUserData);
+//void*  _stdcall Mr2Init(const char* psAppID, const char* psAppPasswd, 
+//	OnReceiveCallBack2 onReceive,const STUConnInfo2* pArrConnInfo, int iArrConnInfoCount, 
+//	void* pvUserData);
 
 
 void   _stdcall Mr2Init2(void** ppHandle, const char* psAppID, const char* psAppPasswd,
