@@ -1,9 +1,6 @@
 // mr_test.cpp : 定义控制台应用程序的入口点。
 //
 
-
-#pragma comment(lib,"mrapi.lib")
-
 #include "stdafx.h"
 
 #include <stdio.h>

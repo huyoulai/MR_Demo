@@ -12,14 +12,14 @@ extern "C" {
 
 #define MR2_MSGFLAG_PERSIST          0x01   /*持久消息标志*/
 #define MR2_MSGFLAG_COMPRESS         0x02   /*压缩标志*/
-#define MR2_MSGFLAG_REPLYTOME		 0X04   /*应答包自动推送到发送方标志*/
+#define MR2_MSGFLAG_REPLYTOME		     0X04   /*应答包自动推送到发送方标志*/
 
 
 #define MR2_MAXLEN_ADDR              32     /*源地址或目的地址的最大长度 @2012.1.12*/
 #define MR2_MAXLEN_PKGID             64     /*包ID的最大长度(目前版本中32位OS上长度为34,64位OS上长度为39或44)*/
 #define MR2_MAXLEN_USERDATA          256    /*用户数据的最大长度*/
 
-#define MR2_MAXLEN_MSGTYPE			 8	/*为了兼容旧的，长度与旧版一样*/
+#define MR2_MAXLEN_MSGTYPE           8      /*为了兼容旧的，长度与旧版一样*/
 
 #define MR2_MAXLEN_IP                16
 
@@ -54,11 +54,11 @@ typedef struct _tagSTUMsgProperty2
     char                m_szUserData1[MR2_MAXLEN_USERDATA];  /*用户数据1, 必须是'\0'结尾的字符串, 供用户使用*/
     char                m_szUserData2[MR2_MAXLEN_USERDATA];  /*用户数据2, 必须是'\0'结尾的字符串, 供用户使用*/
     
-    unsigned char       m_ucFlag;      /*标志:可以是MR2_MSGFLAG_PERSIST或MR2_MSGFLAG_COMPRESS等标志的位或.*/
-	unsigned char       m_ucBizType;      /*业务类型，当前取值有(将来会扩充):0-三方存管,10-银期转账,11-银基转账,12-资金划拨,13-信证报盘,14-电子对账,15-融资融券,16-基金盘后,17-转融通,18-B转H. */
-	unsigned char       m_ucPriority; /* 优先级， 5为最低，3为最高*/
-	unsigned char       m_ucSensitiveLevel;    /* 敏感性级别，0为最低，255为最高*/
-	char				m_szMsgType[MR2_MAXLEN_MSGTYPE]; /*消息类型，目前只能取值: M(消息)或F(文件). 如果为F(文件),则在交换日志中永远不打印包内容.*/
+    unsigned char       m_ucFlag;              /*标志:可以是MR2_MSGFLAG_PERSIST或MR2_MSGFLAG_COMPRESS等标志的位或.*/
+	  unsigned char       m_ucBizType;           /*业务类型，当前取值有(将来会扩充):0-三方存管,10-银期转账,11-银基转账,12-资金划拨,13-信证报盘,14-电子对账,15-融资融券,16-基金盘后,17-转融通,18-B转H. */
+  	unsigned char       m_ucPriority;          /* 优先级， 5为最低，3为最高*/
+	  unsigned char       m_ucSensitiveLevel;    /* 敏感性级别，0为最低，255为最高*/
+	  char				        m_szMsgType[MR2_MAXLEN_MSGTYPE]; /*消息类型，目前只能取值: M(消息)或F(文件). 如果为F(文件),则在交换日志中永远不打印包内容.*/
 } STUMsgProperty2;
 
 /* 连接参数结构体 */
