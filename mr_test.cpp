@@ -32,19 +32,19 @@ typedef int   (WINAPI MR2REGRECVCONDITION)(void*, STUMsgProperty2*, int);
 typedef void  (WINAPI MR2DESTROY)(void*);
 typedef int   (WINAPI MR2MULTIDESTSEND)(void*, const char*, int, STUMultiDestMsgProperty*, int);
 
-MR2INIT				*Mr2Init_1;
-MR2INIT2			*Mr2Init2_1;
-MR2CREATEPKGID		*Mr2CreatePkgID_1;
-MR2SEND				*Mr2Send_1;
-MR2RECEIVE1			*Mr2Receive1_1;
-MR2RECEIVE1_FREEBUF	*Mr2Receive1_FreeBuf_1;
-MR2RECEIVE2			*Mr2Receive2_1;
-MR2RECEIVE3			*Mr2Receive3_1;
-MR2ISLINKOK			*Mr2IsLinkOK_1;
-MR2GETVERSION		*Mr2GetVersion_1;
-MR2REGRECVCONDITION	*Mr2RegRecvCondition_1;
-MR2DESTROY			*Mr2Destroy_1;
-MR2MULTIDESTSEND	*Mr2MultiDestSend_1;
+//MR2INIT				*Mr2Init_1;
+//MR2INIT2			*Mr2Init2_1;
+//MR2CREATEPKGID		*Mr2CreatePkgID_1;
+//MR2SEND				*Mr2Send_1;
+//MR2RECEIVE1			*Mr2Receive1_1;
+//MR2RECEIVE1_FREEBUF	*Mr2Receive1_FreeBuf_1;
+//MR2RECEIVE2			*Mr2Receive2_1;
+//MR2RECEIVE3			*Mr2Receive3_1;
+//MR2ISLINKOK			*Mr2IsLinkOK_1;
+//MR2GETVERSION		*Mr2GetVersion_1;
+//MR2REGRECVCONDITION	*Mr2RegRecvCondition_1;
+//MR2DESTROY			*Mr2Destroy_1;
+//MR2MULTIDESTSEND	*Mr2MultiDestSend_1;
 
 HINSTANCE m_ghDll;
 
